@@ -9,6 +9,19 @@
   </head>
   <body>
     <ul id="cupcakeList"></ul>
+    <div id="cupcakeFormContainer">
+      <form id="cupcakeForm" method="POST" action="/api/cupcakes">
+        <label for="cupcakeFlavor">Flavor</label>
+        <input id="cupcakeFlavor" name="flavor" />
+        <label for="cupcakeRating">Rating</label>
+        <input id="cupcakeRating" name="rating" />
+        <label for="cupcakeSize">Size</label>
+        <input id="cupcakeSize" name="size" />
+        <label for="cupcakeImageURL">Image URL</label>
+        <input id="cupcakeImageURL" name="imageURL" />
+        <button type="submit">Add Cupcake</button>
+      </form>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.js"></script>
     <script src="/static/cupcake.js"></script>
   </body>
