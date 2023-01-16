@@ -36,8 +36,6 @@ function cupcakeHTML(cupcake) {
   cupcakeImage.setAttribute("class", "cupcakeImage");
   cupcakeDiv.append(cupcakeImage);
 
-  console.log(cupcake.size);
-
   //HTML should look like:
   // `<div class="cupcake" data-cupcake-id="cupcake.id">
   //     <li>
@@ -78,4 +76,4 @@ async function submitCupcakeForm(e) {
   console.log(newCupcake);
 }
 
-cupcakeForm.addEventListener("submit", submitCupCakeForm(e));
+cupcakeForm.addEventListener("submit", submitCupcakeForm(e));

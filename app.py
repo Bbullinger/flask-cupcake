@@ -1,8 +1,8 @@
 """Flask app for Cupcakes"""
 from flask import Flask, request, render_template, redirect, flash, jsonify
 from flask_debugtoolbar import DebugToolbarExtension
-from models import app, db, Cupcake, serialize_cupcake
-from secret import my_password
+from models import db, Cupcake, serialize_cupcake
+from create_app import app
 
 
 @app.route("/")

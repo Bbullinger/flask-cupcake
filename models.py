@@ -1,16 +1,6 @@
 """Models for Cupcake app."""
 from flask_sqlalchemy import SQLAlchemy
-from flask import Flask
-from secret import my_password
-
-
-def create_app():
-    app = Flask(__name__)
-
-    app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql:///baked_goods"
-    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-    app.config["SECRET_KEY"] = my_password
-    return app
+from create_app import app
 
 
 def connect_db(app):
@@ -23,7 +13,6 @@ def connect_db(app):
         return db
 
 
-app = create_app()
 db = connect_db(app)
 
 
